@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace CSharpToy
 {
-    class Program
+    public class Program
     {
+
+        public double Add(double a, double b)
+        {
+            return a + b;
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World");
