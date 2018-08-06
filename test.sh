@@ -1,2 +1,4 @@
-mkdir -p OpenCover
-packages/OpenCover.4.6.519/tools/OpenCover.Console.exe -register:user -target:packages/NUnit.ConsoleRunner.3.8.0/tools/nunit3-console.exe -targetargs:CSharpToyTest/CSharpToyTest.csproj -filter:+[CSharpToy]*+[Test]* -output:Opencover/results.xml
+msbuild /t:Rebuild
+mono --debug --profile=coverage:output=coverage.xml,covfilter-file=filter.txt \
+    packages/NUnit.ConsoleRunner.3.8.0/tools/nunit3-console.exe \
+    --inprocess CSharpToyTest/bin/Debug/CSharpToyTest.dll
