@@ -1,0 +1,11 @@
++CSharpToy
++CSharpToyTest
+-nunit3-con-nunit.framework
+-nunit.framework
+-Mono.Cecil
+-NUnit.Engine
+-NUnit.Core
+-nunit.core
+-nunit.engine
+-nunit.v2.driver
+-System
